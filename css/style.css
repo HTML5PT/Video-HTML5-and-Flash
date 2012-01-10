@@ -1,0 +1,84 @@
+/* ------------------------------------------------------------------------------------------
+GERAL
+*/
+
+body
+{ font-family: Arial,Helvetica,sans-serif; line-height: 1.3em;  font-size: 0.75em; color: #333333; background: url(../images/body-pattern.jpg); }
+
+a:link, a:visited
+{ text-decoration: none; color:#028acb; }
+
+a:hover
+{ text-decoration: none; color:#dd0d13; }
+
+p
+{ margin-top: 0; margin-bottom:0.417em }
+
+img
+{ border: 0 none; }
+
+h1
+{ font-size: 2em;}
+
+
+/* ------------------------------------------------------------------------------------------
+VIDEO
+*/
+
+#video_container
+{ margin: 40px auto; width: 50em; display: block; text-align: center; text-shadow:#ffffff 0.083em 0.083em 0;  }
+
+
+video, #flash_video
+{ background-color: #FFFFFF; border: 0.417em solid #FFFFFF; float: left; display: block;  margin-top: 30px;}
+
+
+
+#video_tools
+{ width: 46.667em; height: 3.333em; overflow: hidden; background-color: #FFFFFF; text-align: left; padding: 0 1.667em; line-height: 3.333em; color: #666666; float: left; }
+
+#video_tools img
+{ border: none !important; vertical-align: middle; margin: 0 0.417em; }
+
+#video_tools .switcher_titulo
+{ font-family:Georgia, "Times New Roman", Times, serif; font-style:italic; color: #999999; margin-right: 0.417em; }
+
+#video_tools .switcher_activo
+{ color: #343643; }
+
+#video_tools a, #video_tools .switcher_inactivo, #video_tools .switcher_activo
+{ font-size: 0.833em; font-weight: bold; }
+
+#video_tools .switcher_activo
+{ cursor: default; }
+
+#video_tools .switcher_inactivo
+{ color: #028acb; cursor: pointer; }
+
+#player_switcher
+{ display: none; float: left; margin-right: 2em; }
+
+#video_download
+{ float: left; }
+
+#legendas_switcher
+{ display: none; float: right; }
+
+
+/* ------------------------------------------------------------------------------------------
+LEGENDAS
+Legendas e Player switcher
+*/
+
+#legendas, #legendas_holder
+{ background-color: #f1f2f2; text-align: center; font-size: 1.167em; border-top: 1px solid #cccccc; border-bottom: 1px solid #ffffff; padding: 1.667em 1.5em 1.667em 1.5em; margin: 0 1em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; border-radius: 0.5em; }
+
+#legendas_holder
+{ display: none; }
+
+#legendas_holder span
+{ font-family:'ChaletParisNineteenEightyRegu', sans-serif; font-size: 1.667em; color: #666666; }
+
+
+#legendas [data-begin]:before
+{ content: attr(data-begin) '" a ' attr(data-end) '"   '; font-size:80%; padding-right:1em; }
